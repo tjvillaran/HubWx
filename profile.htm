@@ -6,9 +6,9 @@
 	<script src="sitesDat.js"></script>
 	<script src="../BTAT/btat_obsDat.js"></script>
 	<script src="../BTAT/btat_metDat.js"></script>
-	<link href="../ATAT/map/leaflet2.css" rel="stylesheet">
-	<script src="../ATAT/map/leaflet.js"></script>
-	<script src="../ATAT/map/esri-leaflet.js"></script>
+	<link href="leaflet2.css" rel="stylesheet">
+	<script src="leaflet.js"></script>
+	<script src="esri-leaflet.js"></script>
 	
 <style>  
 	body{
@@ -92,7 +92,7 @@ function loadCSV() {
 		document.getElementById("skewtCaption").innerHTML = "No Data Found"
     }
   };
-  xcsv.open("GET", "data/profileDat_"+icao+".csv", true);
+  xcsv.open("GET", "profileDat_"+icao+".csv", true);
   xcsv.send();
   urlOB = "https://aviationweather.gov/data/metar/?id=" + icao + "&hours=96&include_taf=yes"
   
